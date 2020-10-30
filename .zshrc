@@ -38,6 +38,10 @@ alias gpl="git pull"
 alias gs="git stash"
 alias gsp="git stash pop"
 
+function grss() {
+    git reset --soft HEAD~"$1"
+}
+
 # FFMPEG
 function gif() {
     ffmpeg -i "$1".mov -vf "fps=10,scale=720:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 "$1".gif
