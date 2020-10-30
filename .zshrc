@@ -5,6 +5,7 @@ alias bers="bundle exec rails server"
 alias berc="bundle exec rails console"
 
 # ELIXIR/PHOENIX
+alias mf="mix format"
 alias mt="mix test"
 alias ms="mix phx.server"
 alias iex="iex -S mix"
