@@ -1,1 +1,1 @@
-ln -s .zshrc ~/.zshrc
+source .zshrc
