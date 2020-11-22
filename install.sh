@@ -1,1 +1,1 @@
-source .zshrc
+source "${0:a:h}/.zshrc"
