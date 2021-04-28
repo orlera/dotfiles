@@ -48,3 +48,11 @@ function gif() {
 
 # ASDF
 . /usr/local/opt/asdf/asdf.sh
+
+# Postgres
+alias resetpg="rm '/Users/andreaorler/Library/Application Support/Postgres/var-12/postmaster.pid'"
+
+# Kill process on port
+function kill_port() {
+    lsof -t -i tcp:"$1" | xargs kill -9
+}
